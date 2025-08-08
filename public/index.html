@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Daoming Liu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+	  <div class="header-top">
+	    <!-- Top row: name + profile -->
+	    <div class="header-left">
+	      <h1>Daoming Liu</h1>
+	    </div>
+	    <div class="header-right">
+	      <img src="portrait.jpeg" class="profile-pic" />
+	    </div>
+	  </div>
+	
+	  <div class="header-bottom">
+	    <!-- Bottom row: school + email -->
+	    <div class="header-left">
+	      <p>Electrical and Computer Engineering | Ohio State University</p>
+	    </div>
+	    <div class="header-right">
+	      <p>Contact: liu.11243@osu.edu</p>
+	    </div>
+	  </div>
+	</header>
+	
+	<div class="main-container">
+		<nav>
+			<ul style="line-height: 4;">
+		      <li><a href="#academic"">Academic Experience</a></li>
+		      <li><a href="#work">Work Experience</a></li>
+		      <li><a href="#personal">Personal Life & Hobbie</a></li>
+		      <li><a href="#">Back to Top</a></li>
+		    </ul>
+		</nav>
+	
+	    <main>
+	
+	        <section id="academic">
+	            <h2>Academic Experience</h2>
+	            <!-- Add your academic background here -->
+	            <div class="osu-row">
+				  <img src="osu_logo.png" alt="OSU Logo" class="logo-pic" />
+				  <h3>The Ohio State University | College of Engineering</h3>
+				</div>
+				<div class="osu-subtext">
+				  <p>GPA: 3.9 / 4.0</p>
+				  <p>Dean’s List (AU23 – SP25)</p>
+				  <p>Bachelor of Science in Electrical and Computer Engineering | 2023 – 2027</p>
+				</div>
+				<div class = block-academic>
+					<div class="block-a-title">
+				    	<h4>Major Courses</h4>
+				  	</div>
+				  	<div class="block-a-panel">
+				    	<ul style="line-height: 2;">
+					    	<li>ECE 2020 – Analog Systems & Circuits</li>
+							<li>ECE 2560 – Intro to Microcontroller Systems</li>
+							<li>ECE 2060 – Introduction to Digital Logic</li>
+							<li>CSE 2221 – Software I: Components (Java OOP)</li>
+							<li>CSE 2321 – Foundations I: Discrete Structures</li>
+							<li>ECE 2050 – Intro to Discrete-Time Signals & Systems</li>
+							<li>CSE 1222 – Introduction to C++ Programming</li>
+							<li>PHYSICS 1251 – Electricity, Magnetism, Optics, Quantum</li>
+							<li>PHYSICS 1250 – Mechanics, Energy, Thermodynamics</li>
+							<li>MATH 1172 – Engineering Calculus A</li>
+							<li>MATH 2415 – Ordinary and Partial Differential Equations</li>
+							<li>MATH 2568 – Linear Algebra</li>
+							<li>MATH 1151 – Calculus I</li>
+							<li>ISE 2040.02 – Engineering Economics</li>
+							<li>ENGR 1182.01 – Fundamentals of Engineering II</li>
+							<li>ENGR 1181.01 – Fundamentals of Engineering I</li>
+							<li>CSE 2231 – Software II: Development & Design (Java project-based)</li>
+							<li>ART 2555 – Photography I (elective)</li>
+							<li>CHEM 1210 – General Chemistry I</li>
+							<li>ENGLISH 1110.01 – First-Year English Composition</li>
+							<li>EDUTL 1902 – Advanced Academic Writing</li>
+							<li>ASTRON 2142 – Black Holes (GE elective)</li>
+							<li>COMPSTD 1100 – Intro to Humanities</li>
+							<li>ENGR 1100.15 – OSU Engineering Intro Seminar</li>
+							<li>GENED 1201 – GE Launch Seminar</li>
+					    </ul>
+				  	</div>
+				</div>
+	            <div class = block-academic>
+					<div class="block-a-title">
+				    	<h4>Curriculum-based Project</h4>
+				  	</div>
+				  	<div class="block-a-panel">
+				    	<ul style="line-height: 2;">
+							<li><a href="#">ECE 2560 – Simon Memory Game</a></li>
+							<li><a href="#">CSE 2221 – Calculator</a></li>
+							<li><a href="#">ENGR 1182.01 – Multifunctional Cushion</a></li>
+							<li><a href="#">ENGR 1181.01 – Battleship</a></li>
+					    </ul>
+				  	</div>
+	            </div>
+	        </section>
+	
+	        <section id="work">
+	            <h2>Work Experience</h2>
+	            <div class="block-work">
+		            <div class="block-w-title">
+		            	<h4>Embedded Software Engineering Intern – Estun Automation</h4>
+		            	<div class="experience-date">Embedded Software Intern, June – August 2025</div>
+	
+		            </div>
+		            <div class="block-w-panel">
+		            	<p style="font-weight: bold;">
+		            	Embedded Filter Development
+		            	</p>
+		            	<p>
+		            	Designed and optimized first- and second-order low-pass filters in C for real-time signal
+		            	processing in servo motor control. Filter behavior was modeled and verified using MATLAB and Simulink, 
+		            	with successful integration into embedded firmware to enhance noise suppression and overall system stability.
+		            	</p>
+		            	<img src="LPF.png" class="a-pic" style="height: 200px;" />
+		            	<p style="font-weight: bold;">System Architecture Decoupling & Documentation</p>
+		            	<p>
+		            		Contributed to modularizing tightly coupled software components to improve code maintainability and scalability. 
+		            		Leveraged Doxygen and Graphviz to produce visual documentation of function dependencies and system call graphs, 
+		            		facilitating team understanding of architecture and workflows.
+		            	</p>
+		            	<img src="graphviz.png" class="a-pic" />
+		            	<p style="font-weight: bold;">Feature Integration & Version Control</p>
+		            	<p>
+		            		Supported implementation of new features through structured GitLab workflows, including feature branching, 
+		            		firmware compilation, and secure release processes. Gained hands-on experience with collaborative development, 
+		            		CI/CD pipelines, and structured embedded system deployment.
+		            	</p>
+		            </div>
+	            </div>
+	        </section>
+	
+	        <section id="personal">
+	            <h2>Personal Life & Hobbies</h2>
+	            <div class="block-construct-row">
+		            <div class="block-hobby">
+		            	<h4>Skiing & Snow Boarding</h4>
+		            	<div class="experience-date"><a href="">view more-></a></div>
+		            	<img src="ski.png" class="b-pic" />
+		            </div>
+		            <div class="block-hobby">
+		            	<h4>Photography</h4>
+		            	<div class="experience-date"><a href="">view more-></a></div>
+		            	<img src="photo.png" class="b-pic" />
+		            </div>
+	            </div>
+	        </section>
+	
+	    </main>
+    </div>
+
+</body>
+</html>
