@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.main-container {
+  display: flex;
+}
+header {
+  background-color: #1f2937;
+  color: white;
+  padding: 30px;
+}
+
+.header-top,
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left, .header-right {
+	padding-left: 60px;
+	flex: 1;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.header-right {
+  justify-content: flex-end;
+  padding-right: 60px; /* Adjust this value as needed */
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 3.5em;
+  margin: 0;
+}
+section {
+    margin: 40px 0;
+}
+h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    color: #1f2937;
+}
+main{
+	float: right;
+	padding: 20px;
+	width: 80%;
+	background-color: #f1f1f1;
+	box-sizing: border-box;
+}
+nav {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #C4C3D0;
+  width: 20%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+nav ul {
+  	list-style-type: none;
+ 	padding: 0;
+}
+nav ul li {
+  border-top: 5px solid #D5D5D5;  
+  padding-top: 10px;
+  margin-top: 10px;
+}
+nav ul li:first-child {
+  border-top: none;
+}
+
+h3{
+	font-size: 1.8em;
+	color: black;
+ 	font-weight: bold;
+}
+
+.logo-pic {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.osu-row {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between logo and text */
+}
+
+.osu-subtext {
+  display: flex;
+  margin-right: 80px;
+  flex-direction: column;
+  align-items: flex-end;  /* Right-aligns text */
+  font-size: 0.9em;
+  color: #333;
+  line-height:0px;
+  margin-bottom: 20px;
+}
+
+.block-academic {
+  display: flex;
+  height: 200px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.block-a-title{
+  width: 30%;
+  padding: 0px 70px;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center; 
+  box-sizing: border-box;
+}
+
+.block-a-panel {
+  width: 70%;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #A3B7C9;
+  box-sizing: border-box;
+}
+
+h4{
+	font-size: 1em;
+    padding-bottom: 10px;
+    color: black;
+ 	font-weight: bold;
+ 	text-align: center;
+}
+
+.block-work{
+	display: flex;
+	height: 400px;
+	border: 1px solid #ccc;
+	margin-bottom: 20px;
+	flex-direction:  column;
+}
+
+.block-w-title{
+  height: 30%;
+  padding: 20px;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center; 
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.block-w-panel {
+  height: 70%;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #A3B7C9;
+  box-sizing: border-box;
+}
+
+.a-pic {
+  object-fit: cover;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+.experience-date {
+  font-size: 0.9em;
+  color: black;
+  margin-left: 20px;
+  align-self: flex-end;
+  margin-right: 20px;
+}
+
+.block-construct-row{
+	display: flex; 
+	flex-direction: row;
+}
+
+.block-hobby{
+	display: flex;
+	height: 400px;
+	width: 45%;
+	border: 1px solid #ccc;
+	margin: 20px;
+	flex-direction:  column;
+}
+
+.b-pic{
+	max-width: 100%;
+	max-height: 100%;
+	height: auto;
+	width: auto;
+	object-fit: contain;
+	padding: 10px;
+	display: block;
+}
