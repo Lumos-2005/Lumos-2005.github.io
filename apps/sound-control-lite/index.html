@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sound Control Lite is a lightweight macOS menu bar utility for controlling per-app volume.">
+  <meta name="author" content="@Lumos">
+  <title>Sound Control Lite | macOS Per-App Volume Control</title>
+  <link rel="stylesheet" href="../../source/styles.css">
+  <link rel="stylesheet" href="./page.css">
+</head>
+
+<body id="top" class="scl-page">
+  <header class="scl-nav">
+    <div class="scl-nav-inner">
+      <a class="scl-nav-brand" href="#top" aria-label="Sound Control Lite home">
+        <span>Sound Control Lite</span>
+        <small>by @Lumos</small>
+      </a>
+      <nav aria-label="Sound Control Lite navigation">
+        <a href="#features">Features</a>
+        <a href="#download">Download</a>
+        <a href="#install">Install</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="scl-hero">
+      <div class="scl-hero-inner">
+        <div class="scl-hero-card">
+          <div class="scl-hero-copy">
+            <img src="assets/octopus-volume-icon.png" alt="Sound Control Lite app icon" class="scl-app-icon">
+            <p class="scl-pill">macOS menu bar app</p>
+            <h1>Sound Control Lite</h1>
+            <p class="scl-tagline">Per-app volume control from your Mac menu bar.</p>
+            <p class="scl-subtitle">
+              A lightweight macOS utility for adjusting, muting, and resetting individual app volumes
+              without changing system volume.
+            </p>
+            <div class="scl-hero-actions">
+              <a class="scl-button scl-button-primary" href="#download">Download DMG</a>
+              <a class="scl-button scl-button-secondary" href="#install">Installation Guide</a>
+            </div>
+            <p class="scl-meta">First public beta · Local utility · macOS</p>
+          </div>
+
+          <div class="scl-hero-visual">
+            <div class="scl-menubar-demo" aria-label="Sound Control Lite menu bar popover preview">
+              <svg class="scl-octopus-illustration" viewBox="0 0 260 210" aria-hidden="true" focusable="false">
+                <defs>
+                  <linearGradient id="sclOctopusBody" x1="128" y1="22" x2="228" y2="142" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#FFC1AD"/>
+                    <stop offset="0.42" stop-color="#FF8FA3"/>
+                    <stop offset="0.72" stop-color="#C084FC"/>
+                    <stop offset="1" stop-color="#7C5CFF"/>
+                  </linearGradient>
+                  <linearGradient id="sclOctopusTentacle" x1="48" y1="70" x2="238" y2="176" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#FF8FA3"/>
+                    <stop offset="0.56" stop-color="#F472B6"/>
+                    <stop offset="1" stop-color="#7C5CFF"/>
+                  </linearGradient>
+                  <filter id="sclOctopusShadow" x="-20%" y="-20%" width="140%" height="150%">
+                    <feDropShadow dx="0" dy="16" stdDeviation="12" flood-color="#061A3F" flood-opacity="0.18"/>
+                  </filter>
+                </defs>
+
+                <g class="scl-octopus-back" fill="none" stroke="url(#sclOctopusTentacle)" stroke-width="15" stroke-linecap="round">
+                  <path d="M174 100 C142 106 112 106 76 116"/>
+                  <path d="M190 104 C174 124 158 141 130 154"/>
+                  <path d="M218 102 C226 124 226 142 214 162"/>
+                </g>
+
+                <g class="scl-octopus-body" filter="url(#sclOctopusShadow)">
+                  <path d="M156 76 C156 40 178 20 204 20 C230 20 250 42 250 76 C250 105 232 126 204 126 C176 126 156 105 156 76Z" fill="url(#sclOctopusBody)"/>
+                  <path d="M174 104 C182 117 193 124 204 124 C216 124 228 117 235 104 C226 110 215 113 204 113 C192 113 182 110 174 104Z" fill="rgba(255,255,255,0.22)"/>
+                </g>
+
+                <g class="scl-octopus-front" fill="none" stroke="url(#sclOctopusTentacle)" stroke-width="14" stroke-linecap="round">
+                  <path d="M168 104 C144 116 124 126 96 142"/>
+                  <path d="M188 118 C176 139 164 156 144 176"/>
+                  <path d="M208 120 C210 142 206 158 196 180"/>
+                  <path d="M230 106 C240 124 242 141 236 160"/>
+                </g>
+
+                <g class="scl-octopus-highlight" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="5" stroke-linecap="round">
+                  <path d="M178 45 C190 34 209 33 223 44"/>
+                </g>
+              </svg>
+
+              <div class="scl-demo-popover">
+                <div class="scl-demo-popover-header">
+                  <strong>SoundControlLite</strong>
+                  <span>1 visible apps - 1 active</span>
+                </div>
+
+                <div class="scl-demo-divider"></div>
+
+                <div class="scl-demo-app">
+                  <div class="scl-demo-app-heading">
+                    <div>
+                      <div class="scl-demo-app-name">Google Chrome</div>
+                      <div class="scl-demo-active">active</div>
+                    </div>
+                  </div>
+
+                  <div class="scl-demo-controls">
+                    <div class="scl-demo-speaker" aria-hidden="true">◔</div>
+                    <div class="scl-demo-slider" aria-hidden="true">
+                      <span class="scl-demo-slider-fill"></span>
+                      <span class="scl-demo-slider-knob"></span>
+                    </div>
+                    <span class="scl-demo-percent">75%</span>
+                    <button type="button">Mute</button>
+                    <button type="button">Reset</button>
+                  </div>
+                </div>
+
+                <div class="scl-demo-popover-space"></div>
+                <div class="scl-demo-divider"></div>
+
+                <div class="scl-demo-bottom-actions">
+                  <button type="button">Refresh</button>
+                  <button type="button">Mute All</button>
+                  <button type="button">Reset All Volumes</button>
+                  <button type="button">Settings</button>
+                  <button type="button">Quit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="scl-showcase" aria-label="Sound Control Lite interface previews">
+      <div class="scl-container">
+        <div class="scl-carousel" data-carousel>
+          <!-- Future screenshots can use: assets/hero-menu.png, assets/hero-sliders.png, assets/hero-settings.png, assets/hero-audible.png -->
+          <div class="scl-carousel-viewport">
+            <article class="scl-slide is-active" data-carousel-slide>
+              <div class="scl-mockup scl-mockup-menu">
+                <div class="scl-demo-menubar compact">
+                  <span class="scl-demo-menu-dot"></span>
+                  <span class="scl-demo-menu-spacer"></span>
+                  <span class="scl-demo-menu-icon">🐙</span>
+                </div>
+                <div class="scl-popover scl-popover-menu-preview">
+                  <div class="scl-demo-popover-header">
+                    <strong>SoundControlLite</strong>
+                    <span>1 visible apps - 1 active</span>
+                  </div>
+                  <div class="scl-demo-divider"></div>
+                  <div class="scl-carousel-app-row">
+                    <div>
+                      <div class="scl-demo-app-name">Google Chrome</div>
+                      <div class="scl-demo-active">active</div>
+                    </div>
+                    <div class="scl-demo-controls compact with-actions">
+                      <div class="scl-demo-speaker" aria-hidden="true">◔</div>
+                      <div class="scl-demo-slider" aria-hidden="true">
+                        <span class="scl-demo-slider-fill"></span>
+                        <span class="scl-demo-slider-knob"></span>
+                      </div>
+                      <span class="scl-demo-percent">75%</span>
+                      <button type="button">Mute</button>
+                      <button type="button">Reset</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="scl-slide-copy">
+                <h2>Menu Bar Mixer</h2>
+                <p>Open a compact audio mixer directly from the macOS menu bar.</p>
+              </div>
+            </article>
+
+            <article class="scl-slide" data-carousel-slide>
+              <div class="scl-mockup scl-mockup-sliders">
+                <div class="scl-demo-popover-header">
+                  <strong>SoundControlLite</strong>
+                  <span>3 visible apps - 2 active</span>
+                </div>
+                <div class="scl-demo-divider"></div>
+                <div class="scl-app-volume-row high">
+                  <strong>Google Chrome</strong>
+                  <div class="scl-app-slider"><span></span><i></i></div>
+                  <em>75%</em>
+                </div>
+                <div class="scl-app-volume-row mid">
+                  <strong>Spotify</strong>
+                  <div class="scl-app-slider"><span></span><i></i></div>
+                  <em>45%</em>
+                </div>
+                <div class="scl-app-volume-row low">
+                  <strong>Discord</strong>
+                  <div class="scl-app-slider"><span></span><i></i></div>
+                  <em>20%</em>
+                </div>
+              </div>
+              <div class="scl-slide-copy">
+                <h2>Per-App Sliders</h2>
+                <p>Fine-tune loud apps without changing your system volume.</p>
+              </div>
+            </article>
+
+            <article class="scl-slide" data-carousel-slide>
+              <div class="scl-mockup scl-mockup-actions">
+                <div class="scl-demo-popover-header">
+                  <strong>SoundControlLite</strong>
+                  <span>1 visible apps - 1 active</span>
+                </div>
+                <div class="scl-demo-divider"></div>
+
+                <div class="scl-carousel-app-row">
+                  <div>
+                    <div class="scl-demo-app-name">Google Chrome</div>
+                    <div class="scl-demo-active">active</div>
+                  </div>
+                  <div class="scl-demo-controls compact with-actions">
+                    <div class="scl-demo-speaker" aria-hidden="true">◔</div>
+                    <div class="scl-demo-slider" aria-hidden="true">
+                      <span class="scl-demo-slider-fill"></span>
+                      <span class="scl-demo-slider-knob"></span>
+                    </div>
+                    <span class="scl-demo-percent">75%</span>
+                    <button type="button">Mute</button>
+                    <button type="button">Reset</button>
+                  </div>
+                </div>
+
+                <div class="scl-demo-popover-space compact"></div>
+                <div class="scl-demo-divider"></div>
+
+                <div class="scl-demo-bottom-actions">
+                  <button type="button">Refresh</button>
+                  <button type="button">Mute All</button>
+                  <button type="button">Reset All Volumes</button>
+                  <button type="button">Settings</button>
+                  <button type="button">Quit</button>
+                </div>
+              </div>
+              <div class="scl-slide-copy">
+                <h2>Mute & Reset</h2>
+                <p>Silence one app, mute everything, or reset all app volumes to a clean baseline.</p>
+              </div>
+            </article>
+
+            <article class="scl-slide" data-carousel-slide>
+              <div class="scl-mockup scl-mockup-audible">
+                <div class="scl-mode-compare">
+                  <div class="scl-mode-card">
+                    <h3>All Apps</h3>
+                    <div class="scl-app-list-item"><span></span><strong>Google Chrome</strong></div>
+                    <div class="scl-app-list-item"><span></span><strong>Spotify</strong></div>
+                    <div class="scl-app-list-item muted"><span></span><strong>Discord</strong></div>
+                    <div class="scl-app-list-item muted"><span></span><strong>Quiet App</strong></div>
+                  </div>
+                  <div class="scl-mode-card highlighted">
+                    <h3>Audible Apps</h3>
+                    <div class="scl-audio-pill active">surfaced first</div>
+                    <div class="scl-app-list-item"><span></span><strong>Google Chrome</strong></div>
+                    <div class="scl-app-list-item"><span></span><strong>Spotify</strong></div>
+                  </div>
+                </div>
+              </div>
+              <div class="scl-slide-copy">
+                <h2>Smart App List</h2>
+                <p>Choose between all running apps and an audible-focused view. Current audio sources are surfaced first to keep the list clean.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="scl-carousel-controls">
+            <button type="button" class="scl-carousel-button" data-carousel-prev aria-label="Previous slide">‹</button>
+            <div class="scl-carousel-dots" aria-label="Carousel slide controls">
+              <button type="button" class="is-active" data-carousel-dot aria-label="Show Menu Bar Mixer"></button>
+              <button type="button" data-carousel-dot aria-label="Show Per-App Sliders"></button>
+              <button type="button" data-carousel-dot aria-label="Show Mute & Reset"></button>
+              <button type="button" data-carousel-dot aria-label="Show Smart App List"></button>
+            </div>
+            <button type="button" class="scl-carousel-button" data-carousel-next aria-label="Next slide">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="scl-section">
+      <div class="scl-section-header">
+        <p class="scl-pill">Core controls</p>
+        <h2>Built for everyday Mac audio control</h2>
+      </div>
+      <div class="scl-grid scl-feature-grid">
+        <article class="scl-card">
+          <span>01</span>
+          <h3>Per-App Volume Control</h3>
+          <p>Adjust individual app volumes without changing your Mac's system volume.</p>
+          <p>Turn down a loud browser, boost a quiet app, or keep music lower.</p>
+        </article>
+        <article class="scl-card">
+          <span>02</span>
+          <h3>Menu Bar Mixer</h3>
+          <p>Open a compact audio mixer directly from the macOS menu bar.</p>
+          <p>Use a lightweight popover with sliders, mute buttons, and reset controls.</p>
+        </article>
+        <article class="scl-card">
+          <span>03</span>
+          <h3>Mute & Reset Controls</h3>
+          <p>Mute noisy apps or restore all app volumes with one click.</p>
+          <p>Silence one app, mute everything, or reset volume levels to a clean baseline.</p>
+        </article>
+        <article class="scl-card">
+          <span>04</span>
+          <h3>Smart App List</h3>
+          <p>Choose what the panel shows, with currently audible apps promoted to the top.</p>
+          <p>Switch between all running apps and an audible-app focused view.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="scl-section scl-split">
+      <div class="scl-split-card">
+        <div class="scl-split-copy">
+          <p class="scl-pill">Why it exists</p>
+          <h2>A lightweight mixer for the menu bar</h2>
+          <p>
+            macOS does not provide a simple built-in per-app volume mixer. Sound Control Lite brings
+            focused audio controls to the menu bar without turning the app into a full audio suite.
+          </p>
+        </div>
+        <div class="scl-mini-panel" aria-label="Mini volume mixer preview">
+          <div class="scl-panel-top"><span></span><span></span><span></span></div>
+          <div class="scl-mini-row"><strong>Music</strong><i></i></div>
+          <div class="scl-mini-row"><strong>Browser</strong><i></i></div>
+          <div class="scl-mini-row"><strong>Game</strong><i></i></div>
+          <button type="button">Reset all</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="scl-section">
+      <div class="scl-section-header">
+        <p class="scl-pill">Permissions</p>
+        <h2>Permissions, explained</h2>
+      </div>
+      <div class="scl-grid scl-permission-grid">
+        <article class="scl-card">
+          <h3>Accessibility</h3>
+          <p>Required by macOS for the current app-level control implementation.</p>
+        </article>
+        <article class="scl-card">
+          <h3>Screen Recording</h3>
+          <p>May be required to associate app and window state with audio behavior.</p>
+        </article>
+        <article class="scl-card">
+          <h3>Microphone</h3>
+          <p>May be required by macOS audio APIs or audio activity detection.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="download" class="scl-section scl-download-section">
+      <div class="scl-download-card">
+        <div>
+          <p class="scl-pill">Download</p>
+          <h2>SoundControlLite</h2>
+          <p>Version 1.2 · First public beta · macOS menu bar app</p>
+          <p>DMG installer for macOS</p>
+        </div>
+        <div class="scl-download-side">
+          <a class="scl-button scl-button-primary" href="downloads/SoundControlLite-v1.2.dmg" download>Download</a>
+          <div class="scl-download-details" aria-label="Download details">
+            <span>SoundControlLite-v1.2.dmg</span>
+            <span>v1.2 beta</span>
+            <span>macOS · DMG installer · 3.2 MB</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="install" class="scl-section">
+      <div class="scl-section-header">
+        <p class="scl-pill">Install</p>
+        <h2>Set up the beta</h2>
+      </div>
+      <ol class="scl-step-grid">
+        <li><span>1</span><strong>Download DMG</strong></li>
+        <li><span>2</span><strong>Open DMG</strong></li>
+        <li><span>3</span><strong>Drag to Applications</strong></li>
+        <li><span>4</span><strong>Open the app</strong></li>
+        <li><span>5</span><strong>Control-click / right-click &gt; Open if macOS blocks it</strong></li>
+        <li><span>6</span><strong>Grant requested permissions</strong></li>
+      </ol>
+    </section>
+
+    <section class="scl-section">
+      <div class="scl-section-header">
+        <p class="scl-pill">Beta notes</p>
+        <h2>Known limitations</h2>
+      </div>
+      <div class="scl-limit-list">
+        <span>First public beta</span>
+        <span>Unsigned or not notarized builds may trigger macOS warnings</span>
+        <span>Permissions may require restarting the app or macOS</span>
+        <span>Some protected/system audio sources may not be controllable</span>
+        <span>macOS controls menu bar icon ordering</span>
+      </div>
+    </section>
+
+    <section class="scl-section">
+      <div class="scl-section-header">
+        <p class="scl-pill">FAQ</p>
+        <h2>Short answers</h2>
+      </div>
+      <div class="scl-faq-grid">
+        <details>
+          <summary>Why does macOS warn that the developer cannot be verified?</summary>
+          <p>Early beta builds may be unsigned or not notarized, so macOS may show a security warning.</p>
+        </details>
+        <details>
+          <summary>Why does it need Accessibility permission?</summary>
+          <p>Accessibility can be required for protected app-level controls in the current implementation.</p>
+        </details>
+        <details>
+          <summary>Why Screen Recording or Microphone?</summary>
+          <p>macOS may require them for app/window association or audio activity detection.</p>
+        </details>
+        <details>
+          <summary>How do I uninstall it?</summary>
+          <p>Quit the app, remove it from Applications, and remove related privacy permissions if desired.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="scl-footer">
+    <span>Sound Control Lite · @Lumos</span>
+    <span>First public beta</span>
+    <a href="#top">Back to top</a>
+  </footer>
+
+  <script src="./carousel.js"></script>
+</body>
+
+</html>
