@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 560" role="img" aria-labelledby="title desc">
+  <title id="title">Audible Apps Only placeholder</title>
+  <desc id="desc">A clean app list placeholder focused on currently audible apps.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffd9c4"/>
+      <stop offset="0.5" stop-color="#f59ab4"/>
+      <stop offset="1" stop-color="#7d76ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="920" height="560" rx="44" fill="url(#bg)"/>
+  <rect x="218" y="88" width="484" height="384" rx="38" fill="#fff" opacity="0.92"/>
+  <text x="276" y="168" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#342d45">Audible Apps Only</text>
+  <g>
+    <rect x="276" y="222" width="368" height="58" rx="20" fill="#fff4f2"/>
+    <rect x="276" y="306" width="368" height="58" rx="20" fill="#f4f0ff"/>
+    <rect x="276" y="390" width="368" height="58" rx="20" fill="#fff7eb"/>
+    <circle cx="318" cy="251" r="16" fill="#ff7f9c"/>
+    <circle cx="318" cy="335" r="16" fill="#8c78ff"/>
+    <circle cx="318" cy="419" r="16" fill="#ffb46f"/>
+    <rect x="354" y="242" width="160" height="12" rx="6" fill="#574d64" opacity="0.72"/>
+    <rect x="354" y="326" width="130" height="12" rx="6" fill="#574d64" opacity="0.72"/>
+    <rect x="354" y="410" width="178" height="12" rx="6" fill="#574d64" opacity="0.72"/>
+    <path d="M566 251h42M566 335h42M566 419h42" stroke="#d8cce0" stroke-width="10" stroke-linecap="round"/>
+  </g>
+</svg>
