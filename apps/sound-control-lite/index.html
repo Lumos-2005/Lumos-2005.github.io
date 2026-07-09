@@ -379,14 +379,19 @@
         <div>
           <p class="scl-pill">Download</p>
           <h2>SoundControlLite</h2>
-          <p>Version 1.2 · First public beta · macOS menu bar app</p>
+          <p>Version 1.3 · First public beta · macOS menu bar app</p>
           <p>DMG installer for macOS</p>
+          <p class="scl-release-note">
+            v1.3 improves Zoom compatibility. When Zoom Share Sound is active, SoundControlLite now protects the
+            Zoom audio route and guides users to control the actual source app, such as Safari, Chrome, Music, or
+            VLC. This avoids muted or doubled shared audio.
+          </p>
         </div>
         <div class="scl-download-side">
-          <a class="scl-button scl-button-primary" href="downloads/SoundControlLite-v1.2.dmg" download>Download</a>
+          <a class="scl-button scl-button-primary" href="downloads/SoundControlLite-v1.3.dmg" download>Download</a>
           <div class="scl-download-details" aria-label="Download details">
-            <span>SoundControlLite-v1.2.dmg</span>
-            <span>v1.2 beta</span>
+            <span>SoundControlLite-v1.3.dmg</span>
+            <span>v1.3 beta</span>
             <span>macOS · DMG installer · 3.2 MB</span>
           </div>
         </div>
@@ -406,6 +411,49 @@
         <li><span>5</span><strong>Control-click / right-click &gt; Open if macOS blocks it</strong></li>
         <li><span>6</span><strong>Grant requested permissions</strong></li>
       </ol>
+    </section>
+
+    <section class="scl-section">
+      <div class="scl-section-header">
+        <p class="scl-pill">Changelog</p>
+        <h2>Version History</h2>
+      </div>
+      <div class="scl-changelog-list">
+        <article class="scl-changelog-card">
+          <h3>v1.3 <span>2026-07-09</span></h3>
+          <ul>
+            <li>Improved Zoom Share Sound compatibility.</li>
+            <li>Zoom shared audio is now protected while Share Sound is active.</li>
+            <li>Users should control the source app, such as Safari, Chrome, Music, or VLC, when sharing audio through Zoom.</li>
+            <li>Prevented muted, doubled, or choppy shared audio caused by controlling Zoom's shared-audio route directly.</li>
+          </ul>
+        </article>
+
+        <details class="scl-changelog-card scl-changelog-details">
+          <summary>
+            <span>v1.2</span>
+            <time datetime="2026-07-02">2026-07-02</time>
+          </summary>
+          <ul>
+            <li>Added real-time audio activity detection.</li>
+            <li>Introduced Audible Apps Only, so the menu can focus on apps currently producing sound.</li>
+            <li>Improved packaging and public download flow.</li>
+            <li>Updated the product landing page and DMG download setup.</li>
+            <li>Continued UI and stability polish.</li>
+          </ul>
+        </details>
+
+        <details class="scl-changelog-card scl-changelog-details">
+          <summary>
+            <span>v1.1</span>
+            <time datetime="2026-06-12">2026-06-12</time>
+          </summary>
+          <ul>
+            <li>Earlier public test build.</li>
+            <li>Basic per-app volume control, mute, reset, and menu bar workflow.</li>
+          </ul>
+        </details>
+      </div>
     </section>
 
     <section class="scl-section">
