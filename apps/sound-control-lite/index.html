@@ -361,15 +361,15 @@
       <div class="scl-grid scl-permission-grid">
         <article class="scl-card">
           <h3>Accessibility</h3>
-          <p>Required by macOS for the current app-level control implementation.</p>
+          <p>Allows SoundControlLite to interact with macOS app-level controls and provide reliable menu bar behavior.</p>
         </article>
         <article class="scl-card">
-          <h3>Screen Recording</h3>
-          <p>May be required to associate app and window state with audio behavior.</p>
+          <h3>System Audio Recording Only</h3>
+          <p>Allows SoundControlLite to detect system audio activity and control app audio safely.</p>
         </article>
         <article class="scl-card">
           <h3>Microphone</h3>
-          <p>May be required by macOS audio APIs or audio activity detection.</p>
+          <p>Not normally required for basic per-app volume control.</p>
         </article>
       </div>
     </section>
@@ -401,16 +401,76 @@
     <section id="install" class="scl-section">
       <div class="scl-section-header">
         <p class="scl-pill">Install</p>
-        <h2>Set up the beta</h2>
+        <h2>Install &amp; Permissions</h2>
       </div>
       <ol class="scl-step-grid">
-        <li><span>1</span><strong>Download DMG</strong></li>
-        <li><span>2</span><strong>Open DMG</strong></li>
-        <li><span>3</span><strong>Drag to Applications</strong></li>
-        <li><span>4</span><strong>Open the app</strong></li>
-        <li><span>5</span><strong>Control-click / right-click &gt; Open if macOS blocks it</strong></li>
-        <li><span>6</span><strong>Grant requested permissions</strong></li>
+        <li>
+          <span>1</span>
+          <div>
+            <strong>Download the DMG</strong>
+            <p>Use the download button above to get SoundControlLite-v1.3.dmg.</p>
+          </div>
+        </li>
+        <li>
+          <span>2</span>
+          <div>
+            <strong>Open the DMG</strong>
+            <p>Double-click the downloaded DMG file.</p>
+          </div>
+        </li>
+        <li>
+          <span>3</span>
+          <div>
+            <strong>Drag to Applications</strong>
+            <p>Move SoundControlLite into your Applications folder.</p>
+          </div>
+        </li>
+        <li class="scl-step-warning">
+          <span>4</span>
+          <div>
+            <strong>First launch</strong>
+            <p>If macOS blocks the app, open System Settings &gt; Privacy &amp; Security, click Open Anyway, then confirm Open.</p>
+          </div>
+        </li>
+        <li>
+          <span>5</span>
+          <div>
+            <strong>Grant Accessibility</strong>
+            <p>Go to Privacy &amp; Security &gt; Accessibility and turn on SoundControlLite.</p>
+          </div>
+        </li>
+        <li>
+          <span>6</span>
+          <div>
+            <strong>Grant System Audio Recording</strong>
+            <p>Go to Privacy &amp; Security &gt; Screen &amp; System Audio Recording. Under System Audio Recording Only, turn on SoundControlLite.</p>
+          </div>
+        </li>
+        <li>
+          <span>7</span>
+          <div>
+            <strong>Restart SoundControlLite</strong>
+            <p>Quit and reopen the app after changing permissions.</p>
+          </div>
+        </li>
       </ol>
+      <div class="scl-install-note">
+        <p>
+          SoundControlLite normally requires Accessibility and System Audio Recording Only. Full screen recording is
+          not required unless macOS explicitly asks for it. Microphone permission is not normally required for basic
+          per-app volume control.
+        </p>
+      </div>
+      <div class="scl-permission-explainer" aria-label="Why these permissions are needed">
+        <article>
+          <h3>Why Accessibility?</h3>
+          <p>Allows SoundControlLite to interact with macOS app-level controls and provide reliable menu bar behavior.</p>
+        </article>
+        <article>
+          <h3>Why System Audio Recording Only?</h3>
+          <p>Allows SoundControlLite to detect system audio activity and control app audio safely.</p>
+        </article>
+      </div>
     </section>
 
     <section class="scl-section">

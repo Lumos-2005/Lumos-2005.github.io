@@ -973,6 +973,8 @@ html {
 .scl-split-card,
 .scl-download-card,
 .scl-step-grid li,
+.scl-install-note,
+.scl-permission-explainer article,
 .scl-faq-grid details {
   border: 1px solid var(--scl-border);
   border-radius: 24px;
@@ -1113,8 +1115,8 @@ html {
 .scl-step-grid li {
   display: flex;
   gap: 14px;
-  align-items: center;
-  min-height: 92px;
+  align-items: flex-start;
+  min-height: 150px;
   padding: 18px;
 }
 
@@ -1131,7 +1133,62 @@ html {
 }
 
 .scl-step-grid strong {
+  display: block;
+  margin-bottom: 6px;
   color: var(--scl-navy);
+  line-height: 1.25;
+}
+
+.scl-step-grid p,
+.scl-install-note p,
+.scl-permission-explainer p {
+  margin: 0;
+  color: var(--scl-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.scl-step-warning {
+  border-color: rgba(255, 143, 163, 0.42);
+  background:
+    linear-gradient(135deg, rgba(255, 193, 173, 0.34), rgba(192, 132, 252, 0.2)),
+    var(--scl-card-white);
+  box-shadow: 0 18px 46px rgba(124, 92, 255, 0.12);
+}
+
+.scl-step-warning strong {
+  color: var(--scl-navy-surface);
+}
+
+.scl-install-note {
+  margin-top: 18px;
+  padding: 18px 20px;
+  background:
+    linear-gradient(135deg, rgba(124, 92, 255, 0.1), rgba(255, 255, 255, 0.66)),
+    var(--scl-card-white);
+}
+
+.scl-install-note p {
+  color: var(--scl-navy-surface);
+  font-weight: 750;
+}
+
+.scl-permission-explainer {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.scl-permission-explainer article {
+  padding: 20px;
+}
+
+.scl-permission-explainer h3 {
+  margin: 0 0 8px;
+  color: var(--scl-navy);
+  font-size: 1.05rem;
+  line-height: 1.25;
 }
 
 .scl-changelog-list {
@@ -1308,6 +1365,7 @@ html {
 
   .scl-permission-grid,
   .scl-step-grid,
+  .scl-permission-explainer,
   .scl-faq-grid {
     grid-template-columns: 1fr;
   }
@@ -1369,6 +1427,8 @@ html {
   .scl-download-card,
   .scl-changelog-card,
   .scl-step-grid li,
+  .scl-install-note,
+  .scl-permission-explainer article,
   .scl-faq-grid details {
     border-radius: 20px;
     padding: 20px;
