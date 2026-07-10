@@ -388,7 +388,16 @@
           </p>
         </div>
         <div class="scl-download-side">
-          <a class="scl-button scl-button-primary" href="downloads/SoundControlLite-v1.3.dmg" download>Download</a>
+          <a class="scl-button scl-button-primary download-button" href="downloads/SoundControlLite-v1.3.dmg" download>
+            <span class="download-button-label">Download</span>
+            <span class="download-button-count" aria-label="Total downloads">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M12 3v10m0 0 4-4m-4 4L8 9"/>
+                <path d="M5 14v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4"/>
+              </svg>
+              <span id="downloadCountValue">0</span>
+            </span>
+          </a>
           <div class="scl-download-details" aria-label="Download details">
             <span>SoundControlLite-v1.3.dmg</span>
             <span>v1.3 beta</span>
