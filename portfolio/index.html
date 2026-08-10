@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Daoming Liu's personal portfolio for electrical and computer engineering, embedded systems, software, and research interests.">
-  <title>Daoming Liu | ECE Portfolio</title>
+  <meta name="description" content="Daoming Liu's portfolio covering single-cell RNA-seq research, scientific machine learning, independent software, and electrical and computer engineering.">
+  <title>Daoming Liu | ECE, Scientific ML, and Software</title>
   <link rel="stylesheet" href="../source/styles.css">
 </head>
 
@@ -27,17 +27,16 @@
         <p class="eyebrow">Electrical and Computer Engineering | Ohio State University</p>
         <h1 id="hero-title">Daoming Liu</h1>
         <p class="hero-statement">
-          ECE student focused on embedded systems, software engineering, signal processing,
-          and practical engineering tools for intelligent and biomedical technology.
+          ECE student independently building packaged macOS software, including Sound Control Lite,
+          and developing machine-learning methodology for single-cell aging research.
         </p>
         <p class="contact-line">Contact: <a href="mailto:liu.11243@osu.edu">liu.11243@osu.edu</a></p>
         <div class="link-row" aria-label="Professional links">
           <a href="#contact">Email</a>
-          <a href="#projects">Projects</a>
+          <a href="#featured-project">Sound Control Lite</a>
+          <a href="#research">Research</a>
           <a href="#experience">Experience</a>
-          <span>GitHub link coming soon</span>
-          <span>LinkedIn link coming soon</span>
-          <span>Resume link coming soon</span>
+          <a href="https://github.com/Lumos-2005" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </div>
       <img src="../source/portrait.jpeg" alt="Portrait of Daoming Liu" class="profile-pic">
@@ -51,36 +50,146 @@
         <h2>Engineering interests and focus</h2>
       </div>
       <p class="lead">
-        I am an Electrical and Computer Engineering student interested in embedded systems,
-        software engineering, machine learning, and biomedical/AI research. I enjoy work that
-        connects low-level hardware-aware software with practical tools for modeling,
-        automation, and analysis.
+        My current work combines independent software engineering—most visibly Sound Control Lite—with
+        computational biology, representation learning, and scientific model evaluation. It draws on an
+        electrical and computer engineering foundation in embedded systems, signals, and computer systems.
       </p>
     </section>
 
     <section id="education" class="section">
       <div class="section-heading">
-        <p class="eyebrow">Education</p>
+        <p class="eyebrow">Academic Summary</p>
         <h2>The Ohio State University</h2>
       </div>
-      <div class="content-card education-card">
+      <div class="content-card">
         <div class="education-title">
           <img src="../source/osu_logo.png" alt="Ohio State University logo" class="logo-pic">
           <div>
             <h3>College of Engineering</h3>
-            <p>Bachelor of Science in Electrical and Computer Engineering | Projected graduation: Spring 2027</p>
+            <p>Bachelor of Science in Electrical and Computer Engineering | Expected graduation: Spring 2027</p>
           </div>
         </div>
         <ul class="detail-list">
-          <li>Cumulative GPA: 3.922 / 4.000</li>
-          <li>Earned hours: 101</li>
+          <li>GPA: 3.9 / 4.0</li>
           <li>Dean's List: AU23, SP24, AU24, SP25, AU25, SP26</li>
-          <li>Academic record summary updated from OSU advising report dated June 18, 2026</li>
+          <li>Coursework across electrical engineering, computer engineering, computer science, mathematics, signals, and systems</li>
         </ul>
       </div>
+    </section>
 
+    <section id="featured-project" class="section featured-project">
+      <div class="section-heading">
+        <p class="eyebrow">Featured Independent Software Project</p>
+        <h2>Sound Control Lite</h2>
+      </div>
+      <article class="featured-project-card">
+        <div class="featured-project-main">
+          <img src="../apps/sound-control-lite/assets/octopus-volume-icon.png" alt="Sound Control Lite app icon" class="featured-project-icon">
+          <div>
+            <p class="project-meta">Native macOS Application · Swift · SwiftUI · CoreAudio</p>
+            <h3>A packaged per-app audio mixer for macOS</h3>
+            <p>
+              I independently designed and built Sound Control Lite to solve a missing macOS control:
+              changing one app's volume without altering the system volume. The menu-bar app provides
+              per-app sliders, mute and reset controls, real-time audio activity detection, and a focused
+              view of apps currently producing sound.
+            </p>
+            <p>
+              I developed the native SwiftUI interface and CoreAudio integration, packaged the app as a
+              downloadable DMG, and iterated through public beta releases, including compatibility work
+              for Zoom Share Sound routing.
+            </p>
+            <div class="featured-project-tags" aria-label="Sound Control Lite features">
+              <span>Native menu-bar UI</span>
+              <span>CoreAudio integration</span>
+              <span>Audio activity detection</span>
+              <span>Packaged public beta</span>
+            </div>
+          </div>
+        </div>
+        <div class="featured-project-actions">
+          <span>v1.3 public beta</span>
+          <a href="../apps/sound-control-lite/index.html" target="_blank" rel="noopener noreferrer">View App Page</a>
+        </div>
+      </article>
+    </section>
+
+    <section id="research" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Current Undergraduate Research</p>
+        <h2>Single-cell aging and senescence</h2>
+      </div>
+      <article class="content-card">
+        <p class="lead">
+          The research develops a computational workflow for single-cell RNA sequencing data—measurements
+          of gene activity in individual cells—to determine whether gene-expression patterns can be organized
+          into structured representations that help characterize or predict aging- and senescence-related
+          cellular state. The central challenge is separating biologically meaningful structure from patterns
+          that are specific to one dataset or measurement process.
+          <br><br>
+          Responsibilities span preparing and interpreting single-cell datasets, constructing reduced and
+          interpretable representations of biological variation, and training or evaluating models that relate
+          those representations to aging and senescence. Candidate approaches are compared with simpler
+          baselines and subjected to statistical validation, controlled synthetic benchmarks, and failure
+          analysis. Potential signals are audited for technical and biological confounding, then evaluated
+          on independent datasets to test transfer.
+          <br><br>
+          Building this workflow required rapid cross-domain learning across single-cell biology, gene-expression
+          analysis, computational biology, and machine learning. It applies ECE perspectives on measurement,
+          noise, representation, systems, and quantitative validation to biological data. The research process
+          is organized around hypothesis-driven experiments, reproducible experiment organization, baseline
+          comparisons, iterative debugging, falsification, and explicit decisions about whether evidence
+          supports a proposed direction.
+        </p>
+      </article>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Experience</p>
+        <h2>Embedded software and engineering workflows</h2>
+      </div>
+      <article class="content-card experience-card">
+        <div class="experience-header">
+          <div>
+            <h3>Estun Automation</h3>
+            <p>Embedded Software Intern | June - August 2025</p>
+          </div>
+        </div>
+
+        <div class="experience-grid">
+          <div>
+            <h4>Signal and Filter Work</h4>
+            <p>
+              Worked with first- and second-order low-pass filters in C for servo-control signal
+              processing. Used MATLAB and Simulink to model and verify filter behavior in an
+              embedded-firmware workflow.
+            </p>
+            <img src="../source/LPF.png" alt="Low-pass filter model and response visualization" class="inline-image">
+          </div>
+          <div>
+            <h4>Architecture and Documentation</h4>
+            <p>
+              Studied existing software dependencies and supported documentation and modularization work.
+              Used Doxygen and Graphviz to generate function-dependency and call-graph views for
+              engineering review.
+            </p>
+            <img src="../source/graphviz.png" alt="Graphviz software dependency diagram" class="inline-image">
+          </div>
+          <div>
+            <h4>Development Workflow</h4>
+            <p>
+              Gained experience with an established GitLab workflow, including feature branches,
+              firmware builds, CI/CD pipelines, release procedures, and engineering documentation.
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section" aria-labelledby="coursework-title">
       <div class="content-card">
-        <h3>Relevant Coursework</h3>
+        <h3 id="coursework-title">Relevant Coursework</h3>
         <div class="course-grid">
           <div>
             <h4>Electrical and Computer Engineering</h4>
@@ -117,9 +226,9 @@
             </ul>
           </div>
           <div>
-            <h4>In Progress and Planned</h4>
+            <h4>Recent and Planned</h4>
             <ul>
-              <li>CSE 2431 - Systems II: Operating Systems (Summer 2026, in progress)</li>
+              <li>CSE 2431 - Systems II: Operating Systems</li>
               <li>ECE 5362 - Computer Architecture and Design</li>
               <li>ECE 5020 - Mixed Signal VLSI</li>
               <li>ENGR 5901.01 - Multidisciplinary Capstone 1</li>
@@ -141,59 +250,22 @@
           <p>C, C++, Java, Python, MATLAB</p>
         </article>
         <article class="content-card">
-          <h3>Tools</h3>
-          <p>Git, Linux, Docker/Podman, VirtualBox, Doxygen, Graphviz</p>
+          <h3>Scientific Computing</h3>
+          <p>PyTorch, Scanpy, NumPy, matrix factorization, dimensionality reduction</p>
         </article>
         <article class="content-card">
-          <h3>Engineering</h3>
-          <p>Embedded systems, firmware, signal filtering, MATLAB/Simulink, digital logic, circuits/signals</p>
+          <h3>Engineering and Tools</h3>
+          <p>Embedded systems, signals, MATLAB/Simulink, Git/GitLab, Doxygen, Graphviz</p>
         </article>
       </div>
-    </section>
-
-    <section id="featured-project" class="section featured-project">
-      <div class="section-heading">
-        <p class="eyebrow">Featured Software Project</p>
-        <h2>Sound Control Lite</h2>
-      </div>
-      <article class="featured-project-card">
-        <div class="featured-project-main">
-          <img src="../apps/sound-control-lite/assets/octopus-volume-icon.png" alt="Sound Control Lite app icon" class="featured-project-icon">
-          <div>
-            <p class="project-meta">macOS Utility · Audio Control · Menu Bar App</p>
-            <h3>Per-app volume control for macOS</h3>
-            <p>
-              A lightweight macOS menu bar app for adjusting, muting, and resetting
-              individual app volumes without changing the system volume.
-            </p>
-            <div class="featured-project-tags" aria-label="Sound Control Lite features">
-              <span>Per-app volume control</span>
-              <span>Menu bar mixer</span>
-              <span>Mute and reset controls</span>
-              <span>Smart app list</span>
-            </div>
-          </div>
-        </div>
-        <div class="featured-project-actions">
-          <span>First public beta</span>
-          <a href="../apps/sound-control-lite/index.html" target="_blank" rel="noopener noreferrer">View App Page</a>
-        </div>
-      </article>
     </section>
 
     <section id="projects" class="section">
       <div class="section-heading">
         <p class="eyebrow">Projects</p>
-        <h2>Coursework and engineering projects</h2>
+        <h2>Selected coursework projects</h2>
       </div>
       <div class="card-grid two-columns">
-        <article class="content-card project-card">
-          <span class="project-tag">macOS Utility</span>
-          <h3>Sound Control Lite</h3>
-          <p class="project-meta">macOS Utility / Audio Control</p>
-          <p>A lightweight menu bar app for adjusting and muting individual app volumes on macOS.</p>
-          <a href="../apps/sound-control-lite/index.html" target="_blank" rel="noopener noreferrer">View app page</a>
-        </article>
         <article class="content-card project-card">
           <h3>Simon Memory Game</h3>
           <p class="project-meta">ECE 2560 | Microcontroller systems</p>
@@ -215,61 +287,6 @@
           <p>Course project demonstrating programming logic, structured problem solving, and basic interactive game design.</p>
         </article>
       </div>
-    </section>
-
-    <section id="experience" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Experience</p>
-        <h2>Embedded Software Engineering Intern</h2>
-      </div>
-      <article class="content-card experience-card">
-        <div class="experience-header">
-          <div>
-            <h3>Estun Automation</h3>
-            <p>Embedded Software Intern | June - August 2025</p>
-          </div>
-        </div>
-
-        <div class="experience-grid">
-          <div>
-            <h4>Embedded Filter Development</h4>
-            <p>
-              Designed and optimized first- and second-order low-pass filters in C for real-time
-              signal processing in servo motor control. Modeled and verified filter behavior with
-              MATLAB and Simulink before firmware integration.
-            </p>
-            <img src="../source/LPF.png" alt="Low-pass filter model and response visualization" class="inline-image">
-          </div>
-          <div>
-            <h4>System Architecture Documentation</h4>
-            <p>
-              Supported modularization of tightly coupled software components to improve maintainability.
-              Used Doxygen and Graphviz to produce visual documentation of function dependencies and
-              system call graphs.
-            </p>
-            <img src="../source/graphviz.png" alt="Graphviz software dependency diagram" class="inline-image">
-          </div>
-          <div>
-            <h4>Feature Integration and Version Control</h4>
-            <p>
-              Supported implementation of new features through structured GitLab workflows, including
-              feature branching, firmware compilation, secure release processes, and CI/CD pipelines.
-            </p>
-          </div>
-        </div>
-      </article>
-    </section>
-
-    <section id="research" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Research Interests</p>
-        <h2>Areas I want to explore</h2>
-      </div>
-      <p class="lead">
-        I am interested in machine learning, biomedical AI, single-cell biology modeling, and
-        embedded/medical technology. I am especially interested in projects that combine software,
-        data-driven modeling, and engineering systems with clear real-world applications.
-      </p>
     </section>
 
     <section id="personal" class="section">

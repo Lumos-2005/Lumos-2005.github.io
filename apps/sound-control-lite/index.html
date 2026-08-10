@@ -4,19 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Sound Control Lite is a lightweight macOS menu bar utility for adjusting, muting, and resetting individual app volumes without changing system volume.">
+  <meta name="description" content="Sound Control Lite is an independently built native macOS menu bar app for per-app volume control, audio activity detection, mute, and reset controls.">
   <meta name="robots" content="index, follow">
-  <meta name="author" content="@Lumos">
+  <meta name="author" content="Daoming Liu">
   <title>Sound Control Lite | macOS Per-App Volume Control</title>
   <link rel="canonical" href="https://lumos-2005.github.io/apps/sound-control-lite/">
   <meta property="og:title" content="Sound Control Lite">
-  <meta property="og:description" content="A lightweight macOS menu bar utility for per-app volume control.">
+  <meta property="og:description" content="An independently built native macOS menu bar app for per-app volume control.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://lumos-2005.github.io/apps/sound-control-lite/">
   <meta property="og:image" content="https://lumos-2005.github.io/apps/sound-control-lite/assets/octopus-volume-icon.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Sound Control Lite">
-  <meta name="twitter:description" content="A lightweight macOS menu bar utility for per-app volume control.">
+  <meta name="twitter:description" content="An independently built native macOS menu bar app for per-app volume control.">
   <meta name="twitter:image" content="https://lumos-2005.github.io/apps/sound-control-lite/assets/octopus-volume-icon.png">
   <link rel="stylesheet" href="../../source/styles.css">
   <link rel="stylesheet" href="./page.css">
@@ -27,7 +27,7 @@
     <div class="scl-nav-inner">
       <a class="scl-nav-brand" href="#top" aria-label="Sound Control Lite home">
         <span>Sound Control Lite</span>
-        <small>by @Lumos</small>
+        <small>by Daoming Liu</small>
       </a>
       <nav aria-label="Sound Control Lite navigation">
         <a href="#features">Features</a>
@@ -44,7 +44,7 @@
         <div class="scl-hero-card">
           <div class="scl-hero-copy">
             <img src="assets/octopus-volume-icon.png" alt="Sound Control Lite app icon" class="scl-app-icon">
-            <p class="scl-pill">macOS menu bar app</p>
+            <p class="scl-pill">Independent macOS app</p>
             <h1>Sound Control Lite</h1>
             <p class="scl-tagline">Per-app volume control from your Mac menu bar.</p>
             <p class="scl-subtitle">
@@ -55,7 +55,7 @@
               <a class="scl-button scl-button-primary" href="#download">Download DMG</a>
               <a class="scl-button scl-button-secondary" href="#install">Installation Guide</a>
             </div>
-            <p class="scl-meta">First public beta · Local utility · macOS</p>
+            <p class="scl-meta">Designed and built independently · v1.3 public beta · Apple silicon</p>
           </div>
 
           <div class="scl-hero-visual">
@@ -339,6 +339,8 @@
           <p>
             macOS does not provide a simple built-in per-app volume mixer. Sound Control Lite brings
             focused audio controls to the menu bar without turning the app into a full audio suite.
+            I built it as a native SwiftUI application backed by CoreAudio, with a compact interface,
+            real-time audio activity detection, and explicit handling for app-specific routing behavior.
           </p>
         </div>
         <div class="scl-split-visual">
@@ -401,7 +403,7 @@
           <div class="scl-download-details" aria-label="Download details">
             <span>SoundControlLite-v1.3.dmg</span>
             <span>v1.3 beta</span>
-            <span>macOS · DMG installer · 3.2 MB</span>
+            <span>Apple silicon · macOS 15.7+ · DMG installer · 3.2 MB</span>
           </div>
         </div>
       </div>
@@ -566,7 +568,7 @@
   </main>
 
   <footer class="scl-footer">
-    <span>Sound Control Lite · @Lumos</span>
+    <span>Sound Control Lite · Daoming Liu</span>
     <span>First public beta</span>
     <a href="#top">Back to top</a>
   </footer>
