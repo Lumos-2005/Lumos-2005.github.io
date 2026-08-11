@@ -40,6 +40,12 @@ a:focus {
   text-decoration: underline;
 }
 
+a:focus-visible {
+  outline: 3px solid rgba(35, 87, 137, 0.32);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
 img {
   max-width: 100%;
 }
@@ -61,6 +67,12 @@ img {
 .top-nav a {
   color: white;
   font-size: 0.95rem;
+  text-underline-offset: 4px;
+  transition: color 160ms ease, text-decoration-color 160ms ease;
+}
+
+.site-header a:focus-visible {
+  outline-color: rgba(255, 255, 255, 0.78);
 }
 
 .hero {
@@ -122,6 +134,20 @@ img {
   color: white;
   background: rgba(255, 255, 255, 0.09);
   font-size: 0.9rem;
+}
+
+.link-row a {
+  transition: background 160ms ease, border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.site-header .link-row a:hover,
+.site-header .link-row a:focus {
+  border-color: rgba(255, 255, 255, 0.62);
+  background: rgba(255, 255, 255, 0.17);
+  box-shadow: 0 6px 16px rgba(12, 27, 48, 0.16);
+  color: white;
+  text-decoration: none;
+  transform: translateY(-1px);
 }
 
 main {
@@ -326,13 +352,16 @@ h4 {
   background: var(--accent);
   color: white;
   font-weight: 800;
+  transition: background 160ms ease, box-shadow 160ms ease, transform 160ms ease;
 }
 
 .featured-project-actions a:hover,
 .featured-project-actions a:focus {
   background: var(--accent-dark);
+  box-shadow: 0 8px 18px rgba(23, 58, 94, 0.2);
   color: white;
   text-decoration: none;
+  transform: translateY(-1px);
 }
 
 .experience-header {
@@ -373,6 +402,10 @@ h4 {
   height: 130px;
   border-radius: 8px;
   object-fit: cover;
+}
+
+.interest-card .button {
+  margin-top: 6px;
 }
 
 .contact-section {
@@ -571,6 +604,7 @@ h4 {
   border-radius: 999px;
   font-weight: 800;
   text-decoration: none;
+  transition: background 160ms ease, border-color 160ms ease, box-shadow 160ms ease, color 160ms ease, transform 160ms ease;
 }
 
 .button:hover,
@@ -604,6 +638,14 @@ h4 {
 .button-secondary {
   background: var(--surface);
   color: var(--accent);
+}
+
+.button-secondary:hover,
+.button-secondary:focus {
+  border-color: rgba(35, 87, 137, 0.42);
+  background: var(--surface-soft);
+  box-shadow: 0 8px 18px rgba(31, 41, 55, 0.1);
+  color: var(--accent-dark);
 }
 
 .product-main {

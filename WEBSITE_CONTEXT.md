@@ -49,6 +49,8 @@ Current research themes include:
 - Synthetic benchmark design
 - Model identifiability and confounding
 - Scientific machine learning methodology
+- Rigorous and reproducible research workflow design
+- AI-assisted, human-validated research workflows
 
 Technical work has included:
 - Python-based single-cell analysis
@@ -61,6 +63,8 @@ Technical work has included:
 - Synthetic-data benchmarking
 - Cross-dataset experiments
 - Evaluation of biological and technical confounders
+- Linux-based high-performance computing / supercomputing workloads
+- Structured use of AI assistance for technical exploration, experiment planning, implementation, debugging, documentation, and iterative analysis
 
 The research has increasingly focused on a broader scientific question:
 
@@ -149,6 +153,8 @@ Relevant areas currently include:
 
 ### Engineering
 - Embedded systems
+- Linux
+- High-performance computing / supercomputing
 - MATLAB
 - Simulink
 - Signals and systems

@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Lumos is a mysterious software builder.">
-  <title>Lumos</title>
+  <meta name="description" content="Lumos projects and Daoming Liu's professional engineering portfolio.">
+  <title>Lumos | Daoming Liu</title>
   <style>
     :root {
       --navy: #061a3f;
@@ -118,6 +118,37 @@
       line-height: 1.8;
     }
 
+    .portfolio-entry {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 100%;
+      min-height: 48px;
+      margin-top: 28px;
+      padding: 12px 20px;
+      border: 1px solid rgba(255, 255, 255, 0.34);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 12px 28px rgba(3, 10, 28, 0.2);
+      color: white;
+      font-weight: 800;
+      text-decoration: none;
+      transition: background 160ms ease, border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+    }
+
+    .portfolio-entry:hover,
+    .portfolio-entry:focus {
+      border-color: rgba(255, 193, 173, 0.72);
+      background: rgba(255, 255, 255, 0.17);
+      box-shadow: 0 16px 34px rgba(3, 10, 28, 0.28);
+      transform: translateY(-2px);
+    }
+
+    .portfolio-entry:focus-visible {
+      outline: 3px solid var(--peach);
+      outline-offset: 4px;
+    }
+
     .footer-note {
       margin-top: 48px;
       color: rgba(255, 255, 255, 0.46);
@@ -132,6 +163,12 @@
       }
 
     }
+
+    @media (prefers-reduced-motion: reduce) {
+      .portfolio-entry {
+        transition: none;
+      }
+    }
   </style>
 </head>
 
@@ -142,6 +179,7 @@
       <h1 id="lumos-title">Lumos</h1>
       <p class="subtitle">A mysterious octopus developer building curious things from the deep.</p>
       <p class="whisper">Quiet experiments. Curious utilities. Occasional tentacles.</p>
+      <a class="portfolio-entry" href="portfolio/">Daoming Liu's Professional Portfolio →</a>
       <p class="footer-note">Independent sketches.</p>
     </section>
   </main>

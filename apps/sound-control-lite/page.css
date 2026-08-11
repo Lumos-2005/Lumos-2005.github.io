@@ -1357,6 +1357,39 @@ html {
   text-decoration: none;
 }
 
+.scl-footer-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 7px 13px;
+  border: 1px solid var(--scl-border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.74);
+  color: var(--scl-navy) !important;
+  transition: background 160ms ease, border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.scl-footer-action:hover,
+.scl-footer-action:focus {
+  border-color: rgba(124, 92, 255, 0.34);
+  background: white;
+  box-shadow: 0 8px 20px rgba(91, 64, 92, 0.12);
+  transform: translateY(-1px);
+}
+
+.scl-footer-action:focus-visible,
+.scl-page summary:focus-visible {
+  outline: 3px solid rgba(124, 92, 255, 0.3);
+  outline-offset: 3px;
+}
+
+@media (hover: hover) {
+  .scl-page summary:hover {
+    color: var(--scl-navy);
+  }
+}
+
 @media (max-width: 900px) {
   .scl-hero-card,
   .scl-slide,
